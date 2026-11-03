@@ -1,0 +1,15 @@
+{
+  "name": "weaver-arena",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc && cp -R public/. dist/ && cp README.md dist/README.md",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "benchmark": "npm run build && node tests/benchmark.mjs",
+    "serve": "python3 -m http.server 3000 --directory dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

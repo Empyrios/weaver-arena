@@ -1,0 +1,60 @@
+{
+  "seeds": "100-139",
+  "sideAlternation": true,
+  "results": [
+    {
+      "challenger": "intermediate",
+      "opponent": "beginner",
+      "matches": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "averageTurns": 31
+    },
+    {
+      "challenger": "advanced",
+      "opponent": "beginner",
+      "matches": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "averageTurns": 42
+    },
+    {
+      "challenger": "expert",
+      "opponent": "beginner",
+      "matches": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "averageTurns": 50
+    },
+    {
+      "challenger": "advanced",
+      "opponent": "intermediate",
+      "matches": 40,
+      "wins": 39,
+      "losses": 1,
+      "draws": 0,
+      "averageTurns": 42
+    },
+    {
+      "challenger": "expert",
+      "opponent": "intermediate",
+      "matches": 40,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "averageTurns": 51
+    },
+    {
+      "challenger": "expert",
+      "opponent": "advanced",
+      "matches": 40,
+      "wins": 35,
+      "losses": 5,
+      "draws": 0,
+      "averageTurns": 88
+    }
+  ]
+}
