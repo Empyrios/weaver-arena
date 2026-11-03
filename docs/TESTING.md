@@ -43,3 +43,7 @@ This is simulated mobile width, not a physical Android/iOS test. Uploaded raster
 ## Limitations
 
 No production-scale sprite-storage or concurrency tests. No network play exists to test. Browser battle state is intentionally memory-only; content is durable locally. Full content exports are needed to transfer between devices or origins. A browser reload resets the active battle.
+
+## Mobile and GitHub Pages update
+
+The 25 engine tests pass after the mobile changes. Browser QA at a 390 x 844 CSS pixel viewport confirmed bottom navigation, the workspace selector, a compact battle field, and successful move execution under the `/weaver-arena/` project subpath. This checks relative JS, CSS and sprite asset URLs for Pages compatibility. Home-screen manifest installation is prepared but has not been exercised on a physical phone. Hosting activation requires enabling GitHub Pages for the repository.

@@ -1,5 +1,7 @@
 name: Test and publish Arena
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -15,6 +17,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm test
       - run: cp README.md dist/README.md

@@ -4,7 +4,7 @@ An original, browser-based custom monster battle laboratory. Separate from Empyr
 
 ## Open and play
 
-Production: https://weaver-arena.empyrias.chatgpt.site (owner-private).
+GitHub Pages deployment target: `https://empyrios.github.io/weaver-arena/`. The URL becomes live after Pages is enabled and its deployment succeeds. No ChatGPT login or hosting is required.
 
 1. Open Creature Studio and create or edit a creature. Select its learnset and optional abilities.
 2. Use Move Workshop for custom moves and reusable effect blocks.
@@ -38,7 +38,7 @@ This simulates seeded AI matches and writes `docs/ai-benchmark.json`.
 
 Serve the contents of `dist/` over HTTPS on any static host. No persistent game server is present or required for local AI games. `.openai/hosting.json` is for the existing private deployment only; remove it when deploying independently.
 
-For GitHub Pages, push this project to a **new** `Empyrios/weaver-arena` repository. In Settings > Pages choose GitHub Actions. The included `.github/workflows/pages.yml` builds, tests and publishes `dist/`. Relative asset paths work under `/weaver-arena/`. The workflow grants Pages permissions only to its deployment job. The included `ci.yml` runs engine tests for pull requests.
+For GitHub Pages, use `Empyrios/weaver-arena`. In Settings > Pages choose GitHub Actions. Publishing runs automatically for pushes to `main`, or manually from Actions. The included `.github/workflows/pages.yml` builds, tests and publishes `dist/`. Relative asset paths work under `/weaver-arena/`. The workflow grants Pages permissions only to its deployment job. The included `ci.yml` runs engine tests for pushes and pull requests.
 
 Do not enable Pages or make a private repository public unless you want its game build accessible to visitors. The actual game does not include credentials, backend access, accounts or analytics.
 
@@ -85,3 +85,7 @@ No online multiplayer, socket server, server authentication, private challenge l
 ## Verification
 
 See `docs/TESTING.md` for concrete automated and browser results. `npm test` compiles in strict TypeScript mode before running Node's test runner.
+
+## Mobile use
+
+Open the deployed GitHub Pages URL in Chrome on Android or Safari on iPhone. The mobile interface includes bottom quick navigation, a workspace selector, touch-sized controls, single-column forms, safe-area spacing and a compact battle field. On Android use the browser menu > Add to home screen; on iPhone use Share > Add to Home Screen. The manifest supplies the app name, icons and standalone display. This release still needs a network connection to load and does not promise offline availability. Saves remain in the current browser and origin. Export content from an old host and import it on GitHub Pages to transfer creatures and teams.
